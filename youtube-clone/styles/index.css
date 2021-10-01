@@ -1,0 +1,134 @@
+.fixed-header {
+  position: sticky;
+  top: 0;
+  background-color: white;
+  z-index: 1;
+}
+.menu-toggle {
+  display: flex;
+  align-items: center;
+}
+
+.menu-toggle span {
+  display: block;
+  width: 33px;
+  height: 2.5px;
+  margin-bottom: 5px;
+  position: relative;
+  background: black;
+  border-radius: 3px;
+  z-index: 1;
+  cursor: pointer;
+}
+
+.hamburger {
+  margin-top: 4px;
+}
+
+.youtube-icon {
+  width: 10%;
+  cursor: pointer;
+}
+
+.search-wrapper {
+  border: 1.3px solid #ced4da;
+  height: 38px;
+  width: 25px;
+  position: relative;
+}
+
+.search-icon {
+  position: absolute;
+  top: 10px;
+  left: 4px;
+}
+
+.profile {
+  margin-left: 45%;
+  width: 10%;
+}
+
+.sidebar {
+  margin: 0;
+  padding: 0;
+  width: 200px;
+  background-color: #ffffff;
+  position: fixed;
+  height: 100%;
+  overflow: auto;
+}
+
+.sidebar a {
+  display: block;
+  color: black;
+  padding: 16px;
+  text-decoration: none;
+}
+
+.sidebar a.active {
+  background-color: #f1f1f1;
+  color: black;
+}
+
+.sidebar a:hover:not(.active) {
+  background-color: #f1f1f1;
+  color: black;
+}
+
+div.content {
+  margin-left: 200px;
+  height: 1000px;
+  background-color: #f1f1f1;
+}
+
+@media screen and (max-width: 700px) {
+  .sidebar {
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+  .sidebar a {
+    float: left;
+  }
+  div.content {
+    margin-left: 0;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .sidebar a {
+    text-align: center;
+    float: none;
+  }
+}
+
+.sub-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  overflow: hidden;
+  padding: 10px 15px;
+  position: fixed;
+  z-index: 1;
+  background-color: #ffffff;
+}
+
+.bubbles {
+  width: auto;
+  border-radius: 20px;
+  background: #f1f1f1;
+  padding: 6px;
+}
+
+.bubble-text {
+  color: black;
+  padding: 5px;
+  font-size: 15px;
+}
+
+.end-icons {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
